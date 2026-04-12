@@ -192,7 +192,7 @@ p {
 }
 
 .entrada-pequena {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .entrada-pequena .estructura-entrada {
@@ -214,6 +214,11 @@ p {
   text-align: center;
   padding: 5rem 0 2.5rem;
   max-width: 760px; /* Para que no se alargue el texto */
+}
+
+.cabecera-listado {
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 /* BLOG */
@@ -287,6 +292,52 @@ p {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+/* ADMIN USUARIOS */
+.acciones-usuarios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.buscador-usuarios {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--color_separacion);
+  background-color: var(--color_fondo);
+  width: 260px;
+  font: inherit;
+  color: var(--color_texto);
+}
+
+.buscador-usuarios:focus {
+  outline: none;
+  border-color: var(--color_logo);
+}
+
+.btn-pequeno {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+}
+
+.fila-dato {
+  padding: 1rem 0;
+}
+
+/* Línea entre filas */
+.fila-dato + .fila-dato {
+  border-top: 1px solid var(--color_separacion);
+}
+
+/* Separación debajo de la cabecera */
+.cabecera-listado {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--color_separacion);
 }
 
 /* FOOTER */
