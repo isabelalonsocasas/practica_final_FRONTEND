@@ -14,7 +14,7 @@
 
       <!-- Logotipo -->
       <div class="logotipo-cabecera">
-        <a href="index_log_user.html">
+        <a href="index_log_admin.html">
           <img src="img/logo_arena_padel_club.png" alt="Arena Padel Club">
         </a>
       </div>
@@ -54,9 +54,9 @@
 
         <div class="entrada-texto">
             <p class="definicion">Gestión</p>
-            <h1>Usuarios</h1>
+            <h1>Reservas</h1>
             <p class="descripcion-entrada">
-            Administra los usuarios del sistema: crea, edita o elimina registros.
+            Administra las reservas del sistema: crea, edita o elimina reservas.
             </p>
         </div>
 
@@ -68,67 +68,61 @@
         <div class="contenedor">
 
         <!-- ACCIONES SUPERIORES -->
-        <div class="acciones-usuarios">
+        <div class="gestiones-admin">
         
-        <a href="#" class="btn btn-relleno">Añadir usuario</a>
+        <a href="#" class="btn btn-relleno">Añadir reserva</a>
 
         <input 
             type="text" 
-            class="buscador-usuarios"
-            placeholder="Buscar usuario..."
+            class="buscador-gestiones"
+            placeholder="Buscar reserva..."
         >
 
         </div>
 
-        <!-- LISTADO DE USUARIOS -->
+        <!-- LISTADO DE RESERVAS -->
         <div class="caja-login">
 
-            <!-- CABECERA -->
-            <div class="fila-dato cabecera-listado">
+          <!-- CABECERA -->
+          <div class="cabecera-listado reservas-grid">
             <span>ID</span>
-            <span>Nombre completo</span>
+            <span>Nombre</span>
+            <span>Fecha y hora</span>
             <span>Acciones</span>
-            </div>
+          </div>
 
-            <!-- USUARIO 1 -->
-            <div class="fila-dato">
+          <!-- RESERVA 1 -->
+          <div class="reservas-grid">
             <span>1</span>
-            <span>Bibiana Dorado Mateos</span>
+            <span>Bibiana Dorado</span>
+            <span>12/05/2026 - 18:00</span>
             <div>
-                <a href="admin_usuario_detalle.html" class="btn btn-claro btn-pequeno">Modificar</a>
-                <a href="#" class="btn btn-relleno btn-pequeno">Eliminar</a>
+              <a href="reserva_detalle_admin.html" class="btn btn-claro btn-pequeno">Modificar</a>
+              <a href="#" class="btn btn-relleno btn-pequeno">Eliminar</a>
             </div>
-            </div>
+          </div>
 
-            <!-- USUARIO 2 -->
-            <div class="fila-dato">
+          <!-- RESERVA 2 -->
+          <div class="reservas-grid">
             <span>2</span>
-            <span>Jose Manuel Fernández Freige</span>
+            <span>Jose Manuel Fernández</span>
+            <span>13/05/2026 - 20:00</span>
             <div>
-                <a href="admin_usuario_detalle.html" class="btn btn-claro btn-pequeno">Modificar</a>
-                <a href="#" class="btn btn-relleno btn-pequeno">Eliminar</a>
+              <a href="reserva_detalle_admin.html" class="btn btn-claro btn-pequeno">Modificar</a>
+              <a href="#" class="btn btn-relleno btn-pequeno">Eliminar</a>
             </div>
-            </div>
+          </div>
 
-            <!-- USUARIO 3 -->
-            <div class="fila-dato">
+          <!-- RESERVA 3 -->
+          <div class="reservas-grid">
             <span>3</span>
-            <span>Guillermo Fuentes González</span>
+            <span>Isabel Alonso</span>
+            <span>14/05/2026 - 17:30</span>
             <div>
-                <a href="admin_usuario_detalle.html" class="btn btn-claro btn-pequeno">Modificar</a>
-                <a href="#" class="btn btn-relleno btn-pequeno">Eliminar</a>
+              <a href="reserva_detalle_admin.html" class="btn btn-claro btn-pequeno">Modificar</a>
+              <a href="#" class="btn btn-relleno btn-pequeno">Eliminar</a>
             </div>
-            </div>
-
-            <!-- USUARIO 4 -->
-            <div class="fila-dato">
-            <span>4</span>
-            <span>Isabel Alonso Casas</span>
-            <div>
-                <a href="admin_usuario_detalle.html" class="btn btn-claro btn-pequeno">Modificar</a>
-                <a href="#" class="btn btn-relleno btn-pequeno">Eliminar</a>
-            </div>
-            </div>
+          </div>
 
         </div>
 

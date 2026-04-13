@@ -294,8 +294,8 @@ p {
   flex-wrap: wrap;
 }
 
-/* ADMIN USUARIOS */
-.acciones-usuarios {
+/* ADMIN GESTIONES */
+.gestiones-admin {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -304,7 +304,7 @@ p {
   flex-wrap: wrap;
 }
 
-.buscador-usuarios {
+.buscador-gestiones {
   padding: 0.9rem 1rem;
   border: 1px solid var(--color_separacion);
   background-color: var(--color_fondo);
@@ -313,7 +313,7 @@ p {
   color: var(--color_texto);
 }
 
-.buscador-usuarios:focus {
+.buscador-gestiones:focus {
   outline: none;
   border-color: var(--color_logo);
 }
@@ -323,12 +323,33 @@ p {
   font-size: 0.85rem;
 }
 
-.fila-dato {
-  padding: 1rem 0;
-}
-
 /* Línea entre filas */
 .fila-dato + .fila-dato {
+  border-top: 1px solid var(--color_separacion);
+}
+
+/* grid especifico de reservas */
+.reservas-grid {
+  display: grid;
+  grid-template-columns:  80px minmax(150px, 300px) auto auto;
+}
+
+.reservas-grid div {
+  display: flex;
+  gap: 0.5rem;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.reservas-grid span {
+  display: block;
+}
+
+.reservas-grid {
+  padding: 0.8rem 0;
+}
+
+.reservas-grid + .reservas-grid {
   border-top: 1px solid var(--color_separacion);
 }
 
@@ -544,12 +565,12 @@ p {
   }
 
   .estructura-entrada,
-  .estructura-instalaciones 
+  .estructura-instalaciones, 
   .contenedor-login {
     grid-template-columns: 1fr;
   }
 
-  .entrada-texto
+  .entrada-texto,
   .login-texto {
     max-width: 100%;
     text-align: center;
