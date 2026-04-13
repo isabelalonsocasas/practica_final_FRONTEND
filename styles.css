@@ -630,3 +630,230 @@ p {
 
   }
 }
+
+/* PISTA DETALLE - HORARIOS EN CAJAS */
+.seccion-horarios-pista {
+  padding: 2rem 0 5rem;
+}
+
+.cabecera-horarios {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.texto-horarios {
+  max-width: 420px;
+}
+
+.rejilla-horarios {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.slot-horario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  padding: 1rem 1.2rem;
+  border: 2px solid var(--color_separacion);
+  border-radius: 16px;
+  background-color: var(--blanco);
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.slot-horario.disponible {
+  border-color: var(--color_logo);
+  color: var(--color_texto);
+  background-color: var(--blanco);
+  cursor: pointer;
+}
+
+.slot-horario.disponible:hover {
+  background-color: rgba(158, 31, 20, 0.08);
+  color: var(--color_logo);
+}
+
+.slot-horario.ocupada {
+  background-color: #e4dbd3;
+  border-color: #d3c4ba;
+  color: #7d6f68;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.leyenda-horarios {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.item-leyenda {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color_text_claro);
+}
+
+.color-leyenda {
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--color_separacion);
+}
+
+.color-disponible {
+  background-color: var(--blanco);
+}
+
+.color-ocupada {
+  background-color: #e4dbd3;
+}
+
+.acciones-detalle-pista {
+  margin-top: 2rem;
+}
+
+@media (max-width: 1100px) {
+  .rejilla-horarios {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .rejilla-horarios {
+    grid-template-columns: 1fr;
+  }
+
+  .cabecera-horarios {
+    align-items: start;
+  }
+}
+
+/* ADMIN PISTA FORM */
+.seccion-admin-pista-form {
+  padding: 6rem 0;
+}
+
+.contenedor-admin-pista-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.5rem;
+  align-items: start;
+}
+
+.admin-pista-texto {
+  max-width: 560px;
+}
+
+.admin-pista-texto h1 {
+  margin-bottom: 1.5rem;
+}
+
+.descripcion-admin-pista {
+  margin-top: 1.8rem;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.caja-admin-pista-form {
+  background-color: var(--blanco);
+  border: 1px solid var(--color_separacion);
+  padding: 2.8rem;
+}
+
+.formulario-admin-pista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.formulario-admin-pista .grupo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.formulario-admin-pista .grupo-formulario label {
+  color: var(--color_texto);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.formulario-admin-pista input,
+.formulario-admin-pista select {
+  width: 100%;
+  padding: 1.15rem 1.1rem;
+  border: 1px solid var(--color_separacion);
+  background-color: var(--color_fondo);
+  color: var(--color_texto);
+  font: inherit;
+  min-height: 58px;
+  box-sizing: border-box;
+}
+
+.formulario-admin-pista input:focus,
+.formulario-admin-pista select:focus {
+  outline: none;
+  border-color: var(--color_logo);
+}
+
+.formulario-admin-pista .boton-formulario {
+  width: 100%;
+  margin-top: 0.8rem;
+  cursor: pointer;
+}
+
+.acciones-secundarias-formulario {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+}
+
+.acciones-secundarias-formulario .btn {
+  width: auto;
+}
+
+/* RESPONSIVE ADMIN PISTA FORM */
+@media (max-width: 1100px) {
+  .contenedor-admin-pista-form {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .admin-pista-texto {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .caja-admin-pista-form {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .seccion-admin-pista-form {
+    padding: 4rem 0;
+  }
+
+  .caja-admin-pista-form {
+    padding: 1.5rem;
+  }
+
+  .acciones-secundarias-formulario {
+    justify-content: center;
+  }
+
+  .acciones-secundarias-formulario .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
