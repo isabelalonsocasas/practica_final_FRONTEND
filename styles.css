@@ -59,9 +59,6 @@ a {
   width: 260px;
   font: inherit;
   color: var(--color_texto);
-}
-
-.buscador {
   outline: none;
   border-color: var(--color_logo);
 }
