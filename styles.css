@@ -63,6 +63,15 @@ a {
   border-color: var(--color_logo);
 }
 
+.barra-acciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* O end */
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
 /* TIPOGRAFÍA */
 
 h1, h2, h3, h4 {
@@ -337,18 +346,10 @@ p {
 }
 
 /* ADMIN GESTIONES */
-.gestiones-admin {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
 /* Línea entre filas */
 .fila-dato + .fila-dato {
-  border-top: 1px solid var(--color_separacion);
+  border-bottom: 1px solid var(--color_separacion);
+  padding-bottom: 10px;
 }
 
 /* grid especifico de reservas */
@@ -587,10 +588,6 @@ p {
   .acciones-secundarias-formulario .btn {
     width: 100%;
     text-align: center;
-  }
-
-  .tabla-reservas-wrapper {
-    padding: 1rem;
   }
 
   .tabla-reservas-usuario th {
@@ -928,13 +925,6 @@ p {
   align-items: center;
 }
 
-.tabla-reservas-wrapper {
-  background-color: var(--blanco);
-  border: 1px solid var(--color_separacion);
-  padding: 2rem;
-  overflow-x: auto;
-}
-
 .tabla-reservas-usuario {
   width: 100%;
   border-collapse: collapse;
@@ -1018,10 +1008,6 @@ p {
   .acciones-usuario-reservas,
   .acciones-usuario-reservas .btn {
     width: 100%;
-  }
-
-  .tabla-reservas-wrapper {
-    padding: 1.2rem;
   }
 }
 
