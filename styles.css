@@ -953,17 +953,6 @@ p {
   font-size: 0.9rem;
 }
 
-@media (max-width: 900px) {
-  .seccion-usuario-reservas {
-    padding: 4.5rem 0;
-  }
-
-  .acciones-usuario-reservas,
-  .acciones-usuario-reservas .btn {
-    width: 100%;
-  }
-}
-
 .tabla-reservas-usuario th:nth-child(1),
 .tabla-reservas-usuario td:nth-child(1) {
   width: 60px;
