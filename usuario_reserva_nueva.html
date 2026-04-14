@@ -129,54 +129,5 @@
     </div>
   </footer>
 
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const pistaParam = params.get("pista") || "";
-    const fechaParam = params.get("fecha") || "";
-    const horaParam = params.get("hora") || "";
-
-    const inputPista = document.getElementById("pista");
-    const inputFecha = document.getElementById("fecha");
-    const inputHora = document.getElementById("hora");
-
-    const botonesPista = document.querySelectorAll(".opcion-pista");
-    const botonesHora = document.querySelectorAll(".slot-horario-form.disponible");
-
-    botonesPista.forEach(boton => {
-      boton.addEventListener("click", () => {
-        botonesPista.forEach(b => b.classList.remove("seleccionada"));
-        boton.classList.add("seleccionada");
-        inputPista.value = boton.dataset.pista;
-      });
-
-      if (boton.dataset.pista === pistaParam) {
-        boton.classList.add("seleccionada");
-        inputPista.value = pistaParam;
-      }
-    });
-
-    if (fechaParam) {
-      const partes = fechaParam.split("-");
-      if (partes.length === 3) {
-        inputFecha.value = `${partes[2]}-${partes[1]}-${partes[0]}`;
-      } else {
-        inputFecha.value = fechaParam;
-      }
-    }
-
-    botonesHora.forEach(boton => {
-      boton.addEventListener("click", () => {
-        botonesHora.forEach(b => b.classList.remove("seleccionada"));
-        boton.classList.add("seleccionada");
-        inputHora.value = boton.dataset.hora;
-      });
-
-      if (boton.dataset.hora === horaParam) {
-        boton.classList.add("seleccionada");
-        inputHora.value = horaParam;
-      }
-    });
-  </script>
-
 </body>
 </html>
