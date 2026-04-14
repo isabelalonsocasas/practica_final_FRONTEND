@@ -47,70 +47,66 @@
                     </p>
                 </div>
 
-                <div style="text-align: right;">
+                <div class="registro-login">
                     <a href="usuario_reservas.html" class="btn btn-claro">Volver a mis reservas</a>
                 </div>
 
             </div>
         </section>
 
-        <section style="padding-bottom: 5rem;">
-            <div class="contenedor contenedor-2col" style="grid-template-columns: 1.2fr 0.8fr;">
+        <section class="seccion-login">
+            
+            <div class="contenedor contenedor-2col">
 
                 <div class="caja">
-                    <h3 style="margin-bottom: 1.5rem;">Información de la reserva</h3>
+                    <h3>Información de la reserva</h3>
+                    
+                    <p class="descripcion-entrada"></p>
 
-                    <div>
-                        <div class="fila-dato"
-                            style="grid-template-columns: 180px 1fr; border-top: 1px solid var(--color_separacion); padding: 1rem 0;">
-                            <strong>ID reserva</strong>
-                            <span id="reserva-id" style="color: var(--color_text_claro);">-</span>
-                        </div>
+                    <div class="fila-dato">
+                        <label>ID reserva</label>
+                        <p id="reserva-id">-</p>
+                    </div>
 
-                        <div class="fila-dato"
-                            style="grid-template-columns: 180px 1fr; border-top: 1px solid var(--color_separacion); padding: 1rem 0;">
-                            <strong>Pista</strong>
-                            <span id="reserva-pista" style="color: var(--color_text_claro);">-</span>
-                        </div>
+                    <div class="fila-dato">
+                        <label>Pista</label>
+                        <p id="reserva-pista">-</p>
+                    </div>
 
-                        <div class="fila-dato"
-                            style="grid-template-columns: 180px 1fr; border-top: 1px solid var(--color_separacion); padding: 1rem 0;">
-                            <strong>Fecha</strong>
-                            <span id="reserva-fecha" style="color: var(--color_text_claro);">-</span>
-                        </div>
+                    <div class="fila-dato">
+                        <label>Fecha</label>
+                        <p id="reserva-fecha">-</p>
+                    </div>
 
-                        <div class="fila-dato"
-                            style="grid-template-columns: 180px 1fr; border-top: 1px solid var(--color_separacion); padding: 1rem 0;">
-                            <strong>Hora</strong>
-                            <span id="reserva-hora" style="color: var(--color_text_claro);">-</span>
-                        </div>
+                    <div class="fila-dato">
+                        <label>Hora</label>
+                        <p id="reserva-hora">-</p>
+                    </div>
 
-                        <div class="fila-dato"
-                            style="grid-template-columns: 180px 1fr; border-top: 1px solid var(--color_separacion); padding: 1rem 0;">
-                            <strong>Precio</strong>
-                            <span id="reserva-precio" style="color: var(--color_text_claro);">-</span>
-                        </div>
+                    <div class="fila-dato">
+                        <label>Precio</label>
+                        <p id="reserva-precio">-</p>
                     </div>
                 </div>
 
-                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <div class="formulario-login">
 
                     <div class="caja">
                         <h3>Acciones</h3>
-                        <p style="margin: 1rem 0 1.5rem;">
+                        <p class="descripcion-entrada">
                             Puedes modificar los datos de tu reserva o cancelarla si ya no vas a asistir.
                         </p>
-                        <div style="display: flex; flex-direction: column; gap: 1rem;">
-                            <a href="#" class="btn btn-relleno" style="text-align: center;">Modificar reserva</a>
-                            <a href="#" class="btn btn-claro" style="text-align: center;">Cancelar reserva</a>
+                        
+                        <div class="formulario-login">
+                            <a href="#" class="btn btn-relleno boton-formulario text-center">Modificar reserva</a>
+                            <a href="#" class="btn btn-claro boton-formulario text-center">Cancelar reserva</a>
                         </div>
                     </div>
 
                     <div class="caja">
                         <h3>Información adicional</h3>
-                        <p style="margin-top: 1rem;">
-                            Recuerda presentarte con al menos 10 minutos de antelación y llevar el equipamiento
-                            adecuado.
+                        <p class="descripcion-entrada" style="margin-bottom: 0;">
+                            Recuerda presentarte con al menos 10 minutos de antelación y llevar el equipamiento adecuado.
                         </p>
                     </div>
 
