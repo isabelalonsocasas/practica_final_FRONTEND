@@ -1149,3 +1149,201 @@ p {
     padding: 1.5rem;
   }
 }
+
+/* USUARIO RESERVA NUEVA */
+.seccion-usuario-reserva-nueva {
+  padding: 5.5rem 0;
+}
+
+.contenedor-usuario-reserva-nueva {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.5rem;
+  align-items: start;
+}
+
+.usuario-reserva-nueva-texto {
+  max-width: 580px;
+}
+
+.usuario-reserva-nueva-texto h1 {
+  margin-bottom: 1.4rem;
+}
+
+.descripcion-usuario-reserva-nueva {
+  margin-top: 1.5rem;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.caja-usuario-reserva-nueva {
+  background-color: var(--blanco);
+  border: 1px solid var(--color_separacion);
+  padding: 2.5rem;
+}
+
+.formulario-usuario-reserva-nueva {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.formulario-usuario-reserva-nueva .grupo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.formulario-usuario-reserva-nueva .grupo-formulario label {
+  color: var(--color_texto);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.formulario-usuario-reserva-nueva input,
+.formulario-usuario-reserva-nueva textarea {
+  width: 100%;
+  padding: 1.05rem 1rem;
+  border: 1px solid var(--color_separacion);
+  background-color: var(--color_fondo);
+  color: var(--color_texto);
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.formulario-usuario-reserva-nueva input:focus,
+.formulario-usuario-reserva-nueva textarea:focus {
+  outline: none;
+  border-color: var(--color_logo);
+}
+
+.formulario-usuario-reserva-nueva textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.grupo-opciones-pista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.opcion-pista {
+  padding: 0.95rem 1.4rem;
+  border: 1.5px solid var(--color_logo);
+  background-color: transparent;
+  color: var(--color_logo);
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.opcion-pista:hover {
+  background-color: rgba(158, 31, 20, 0.08);
+}
+
+.opcion-pista.seleccionada {
+  background-color: var(--color_logo);
+  color: white;
+}
+
+.rejilla-horarios-formulario {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 0.9rem;
+}
+
+.slot-horario-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 78px;
+  padding: 1rem;
+  border-radius: 16px;
+  font: inherit;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.slot-horario-form.disponible {
+  border: 1.5px solid var(--color_logo);
+  background-color: var(--blanco);
+  color: var(--color_texto);
+  cursor: pointer;
+}
+
+.slot-horario-form.disponible:hover {
+  background-color: rgba(158, 31, 20, 0.08);
+  color: var(--color_logo);
+}
+
+.slot-horario-form.disponible.seleccionada {
+  background-color: var(--color_logo);
+  color: white;
+}
+
+.slot-horario-form.ocupada {
+  border: 1px solid #d3c4ba;
+  background-color: #e4dbd3;
+  color: #7d6f68;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.leyenda-horarios-formulario {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.formulario-usuario-reserva-nueva .boton-formulario {
+  width: 100%;
+  margin-top: 0.6rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .contenedor-usuario-reserva-nueva {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .usuario-reserva-nueva-texto {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .caja-usuario-reserva-nueva {
+    padding: 2rem;
+  }
+
+  .rejilla-horarios-formulario {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .seccion-usuario-reserva-nueva {
+    padding: 4rem 0;
+  }
+
+  .caja-usuario-reserva-nueva {
+    padding: 1.5rem;
+  }
+
+  .rejilla-horarios-formulario {
+    grid-template-columns: 1fr;
+  }
+
+  .acciones-secundarias-formulario {
+    justify-content: center;
+  }
+
+  .acciones-secundarias-formulario .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
