@@ -1,4 +1,3 @@
-
 /* VARIABLES GENERALES*/
 :root {
   --color_fondo: #f7f4f0;
@@ -13,7 +12,6 @@
 }
 
 /* CONFIGURACIONES GENERALES del body*/
-
 body {
   background-color: var(--color_fondo);
   color: var(--color_texto);
@@ -72,20 +70,39 @@ a {
   margin-bottom: 2rem;
 }
 
-.input-texto, 
-.input-select, 
-.input-textarea {
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea {
   width: 100%;
-  padding: 1rem;
+  padding: 1.05rem 1rem;
   border: 1px solid var(--color_separacion);
   background-color: var(--color_fondo);
   color: var(--color_texto);
   font: inherit;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Fundamental para que no se salgan de la caja */
+  min-height: 55px; /* Unifica alturas entre selectores e inputs */
+}
+
+/* Efecto al pinchar sobre ellos */
+.grupo-formulario input:focus,
+.grupo-formulario select:focus,
+.grupo-formulario textarea:focus {
+  outline: none;
+  border-color: var(--color_logo);
+}
+
+/* Excepción para cajas de texto grandes (comentarios) */
+.grupo-formulario textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Excepción para que el input del 'ojito' de la contraseña no se rompa */
+.password-container input {
+  min-height: auto;
 }
 
 /* TIPOGRAFÍA */
-
 h1, h2, h3, h4 {
   font-family: Georgia;
   font-weight: 500;
@@ -448,19 +465,6 @@ p {
   font-weight: 600;
 }
 
-.grupo-formulario input {
-  padding: 0.95rem 1rem;
-  border: 1px solid var(--color_separacion);
-  background-color: var(--color_fondo);
-  color: var(--color_texto);
-  font: inherit;
-}
-
-.grupo-formulario input:focus {
-  outline: none;
-  border-color: var(--color_logo);
-}
-
 .boton-formulario {
   width: 100%;
   cursor: pointer;
@@ -561,12 +565,6 @@ p {
   width: 18px;
   height: 18px;
   object-fit: contain;
-}
-
-.dato-texto {
-  padding: 0.95rem 1rem;
-  border: 1px solid var(--color_separacion);
-  background-color: var(--color_fondo);
 }
 
 /* RESPONSIVE */
@@ -845,24 +843,6 @@ p {
   font-size: 1rem;
 }
 
-.formulario-admin-pista input,
-.formulario-admin-pista select {
-  width: 100%;
-  padding: 1.15rem 1.1rem;
-  border: 1px solid var(--color_separacion);
-  background-color: var(--color_fondo);
-  color: var(--color_texto);
-  font: inherit;
-  min-height: 58px;
-  box-sizing: border-box;
-}
-
-.formulario-admin-pista input:focus,
-.formulario-admin-pista select:focus {
-  outline: none;
-  border-color: var(--color_logo);
-}
-
 .formulario-admin-pista .boton-formulario {
   width: 100%;
   margin-top: 0.8rem;
@@ -1049,28 +1029,6 @@ p {
   color: var(--color_texto);
   font-weight: 600;
   font-size: 1rem;
-}
-
-.formulario-usuario-reserva-nueva input,
-.formulario-usuario-reserva-nueva textarea {
-  width: 100%;
-  padding: 1.05rem 1rem;
-  border: 1px solid var(--color_separacion);
-  background-color: var(--color_fondo);
-  color: var(--color_texto);
-  font: inherit;
-  box-sizing: border-box;
-}
-
-.formulario-usuario-reserva-nueva input:focus,
-.formulario-usuario-reserva-nueva textarea:focus {
-  outline: none;
-  border-color: var(--color_logo);
-}
-
-.formulario-usuario-reserva-nueva textarea {
-  resize: vertical;
-  min-height: 120px;
 }
 
 .grupo-opciones-pista {
