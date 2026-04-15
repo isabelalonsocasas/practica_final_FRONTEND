@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gestion Reservas | Arena Padel Club</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <!-- CABECERA -->
@@ -50,74 +52,71 @@
   <main>
     <!-- BANNER / TITULO -->
     <section class="entrada entrada-pequena">
-        <div class="contenedor estructura-entrada">
+      <div class="contenedor estructura-entrada">
 
         <div class="entrada-texto">
-            <p class="definicion">Gestión</p>
-            <h1>Reservas</h1>
-            <p class="descripcion-entrada">
+          <p class="definicion">Gestión</p>
+          <h1>Reservas</h1>
+          <p class="descripcion-entrada">
             Administra las reservas del sistema: crea, edita o elimina reservas.
-            </p>
+          </p>
         </div>
 
-        </div>
+      </div>
     </section>
 
     <!-- CONTENIDO PRINCIPAL -->
     <section class="seccion-login">
-        <div class="contenedor">
+      <div class="contenedor">
 
         <!-- ACCIONES SUPERIORES -->
         <div class="barra-acciones">
-        
-        <a href="admin_reserva_nueva.html" class="btn btn-relleno">Añadir reserva</a>
 
-        <input 
-            type="text" 
-            class="buscador"
-            placeholder="Buscar reserva..."
-        >
+          <a href="#" class="btn btn-relleno">Añadir reserva</a>
+
+          <input type="text" class="buscador" placeholder="Buscar reserva...">
 
         </div>
 
         <!-- LISTADO DE RESERVAS -->
         <div class="caja">
 
-          <!-- CABECERA -->
-          <div class="cabecera-listado reservas-grid">
+          <div class="fila-dato cabecera-listado">
             <span>ID</span>
-            <span>Nombre</span>
-            <span>Fecha y hora</span>
+            <span>Datos de la reserva</span>
             <span>Acciones</span>
           </div>
 
-          <!-- RESERVA 1 -->
-          <div class="reservas-grid">
+          <div class="fila-dato">
             <span>1</span>
-            <span>Bibiana Dorado</span>
-            <span>12/05/2026 - 18:00</span>
+            <span>
+              <strong>Bibiana Dorado</strong> <br>
+              12/05/2026 - 18:00
+            </span>
             <div>
               <a href="admin_reserva_detalle.html" class="btn btn-claro btn-pequeno">Modificar</a>
               <a href="#" class="btn btn-relleno btn-pequeno">Eliminar</a>
             </div>
           </div>
 
-          <!-- RESERVA 2 -->
-          <div class="reservas-grid">
+          <div class="fila-dato">
             <span>2</span>
-            <span>Jose Manuel Fernández</span>
-            <span>13/05/2026 - 20:00</span>
+            <span>
+              <strong>Jose Manuel Fernández</strong> <br>
+              13/05/2026 - 20:00
+            </span>
             <div>
               <a href="admin_reserva_detalle.html" class="btn btn-claro btn-pequeno">Modificar</a>
               <a href="#" class="btn btn-relleno btn-pequeno">Eliminar</a>
             </div>
           </div>
 
-          <!-- RESERVA 3 -->
-          <div class="reservas-grid">
+          <div class="fila-dato">
             <span>3</span>
-            <span>Isabel Alonso</span>
-            <span>14/05/2026 - 17:30</span>
+            <span>
+              <strong>Isabel Alonso</strong> <br>
+              14/05/2026 - 17:30
+            </span>
             <div>
               <a href="admin_reserva_detalle.html" class="btn btn-claro btn-pequeno">Modificar</a>
               <a href="#" class="btn btn-relleno btn-pequeno">Eliminar</a>
@@ -126,7 +125,7 @@
 
         </div>
 
-        </div>
+      </div>
     </section>
 
   </main>
@@ -154,4 +153,5 @@
   </footer>
 
 </body>
+
 </html>
