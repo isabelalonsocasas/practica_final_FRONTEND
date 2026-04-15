@@ -46,78 +46,92 @@
   </header>
 
   <main>
-    <section class="seccion-reserva-detalle">
-      <div class="contenedor">
-        <div class="cabecera-reserva-detalle">
-          <div class="reserva-detalle-texto">
-            <p class="definicion">Área personal</p>
-            <h1>Detalle de reserva</h1>
-            <p class="descripcion-reserva-detalle">
-              Consulta la información de tu reserva y realiza acciones sobre ella.
-            </p>
-          </div>
+        <section class="entrada entrada-pequena">
+            <div class="contenedor estructura-entrada">
 
-          <div class="acciones-superiores-reserva">
-            <a href="usuario_reservas.html" class="btn btn-claro">Volver a mis reservas</a>
-          </div>
-        </div>
+                <div class="entrada-texto">
+                    <p class="definicion">Área personal</p>
+                    <h1>Detalle de reserva</h1>
+                    <p class="descripcion-entrada">
+                        Consulta la información de tu reserva y realiza acciones sobre ella.
+                    </p>
+                </div>
 
-        <div class="contenedor-2col contenedor-reserva-detalle">
-          <div class="caja">
-            <h3>Información de la reserva</h3>
+                <div class="registro-login">
+                    <a href="admin_reservas.html" class="btn btn-claro">Volver a mis reservas</a>
+                </div>
 
-            <div class="datos-reserva-detalle">
-              <div class="fila-reserva-detalle">
-                <span class="etiqueta-reserva-detalle">ID reserva</span>
-                <span class="valor-reserva-detalle" id="reserva-id">-</span>
-              </div>
-
-              <div class="fila-reserva-detalle">
-                <span class="etiqueta-reserva-detalle">Pista</span>
-                <span class="valor-reserva-detalle" id="reserva-pista">-</span>
-              </div>
-
-              <div class="fila-reserva-detalle">
-                <span class="etiqueta-reserva-detalle">Fecha</span>
-                <span class="valor-reserva-detalle" id="reserva-fecha">-</span>
-              </div>
-
-              <div class="fila-reserva-detalle">
-                <span class="etiqueta-reserva-detalle">Hora</span>
-                <span class="valor-reserva-detalle" id="reserva-hora">-</span>
-              </div>
-
-              <div class="fila-reserva-detalle">
-                <span class="etiqueta-reserva-detalle">Precio</span>
-                <span class="valor-reserva-detalle" id="reserva-precio">-</span>
-              </div>
             </div>
-          </div>
+        </section>
 
-          <div class="panel-acciones-reserva">
-            <div class="caja">
-              <h3>Acciones</h3>
-              <p>
-                Puedes modificar los datos de tu reserva o cancelarla si ya no vas a asistir.
-              </p>
+        <section class="seccion-login">
+            
+            <div class="contenedor contenedor-2col">
 
-              <div class="botones-acciones-reserva">
-                <a href="#" class="btn btn-relleno">Modificar reserva</a>
-                <a href="#" class="btn btn-claro">Cancelar reserva</a>
-              </div>
+                <div class="caja">
+                    <h3>Información de la reserva</h3>
+                    
+                    <p class="descripcion-entrada"></p>
+
+                    <div class="fila-dato">
+                        <label>ID reserva</label>
+                        <p id="reserva-id">15</p>
+                        <button class="btn btn-claro btn-pequeno">Modificar</button>
+                    </div>
+
+                    <div class="grupo-formulario fila-dato">
+                        <label>Pista</label>
+                        <input type="text" value="La Playa">
+                        <button class="btn btn-claro btn-pequeno">Modificar</button>
+                    </div>
+
+                    <div class="grupo-formulario fila-dato">
+                        <label>Fecha</label>
+                        <input type="date" value="2026-05-18">
+                        <button class="btn btn-claro btn-pequeno">Modificar</button>
+                    </div>
+
+                    <div class="grupo-formulario fila-dato">
+                        <label>Hora</label>
+                        <div style="display:flex; gap:0.5rem;">
+                            <input type="time" value="20:00">
+                            <input type="time" value="21:30">
+                        </div>
+                        <button class="btn btn-claro btn-pequeno">Modificar</button>
+                    </div>
+
+                    <div class="fila-dato">
+                        <label>Precio</label>
+                        <p id="reserva-precio">18€</p>
+                        <button class="btn btn-claro btn-pequeno">Modificar</button>
+                    </div>
+                </div>
+
+                <div class="formulario-login">
+
+                    <div class="caja">
+                        <h3>Acciones</h3>
+                        <p class="descripcion-entrada">
+                            Puedes modificar los datos de tu reserva o cancelarla si ya no vas a asistir.
+                        </p>
+                        
+                        <div class="formulario-login">
+                            <a href="#" class="btn btn-claro boton-formulario text-center">Cancelar reserva</a>
+                        </div>
+                    </div>
+
+                    <div class="caja">
+                        <h3>Información adicional</h3>
+                        <p class="descripcion-entrada" style="margin-bottom: 0;">
+                            Recuerda presentarte con al menos 10 minutos de antelación y llevar el equipamiento adecuado.
+                        </p>
+                    </div>
+
+                </div>
+
             </div>
-
-            <div class="caja">
-              <h3>Información adicional</h3>
-              <p>
-                Recuerda presentarte con al menos 10 minutos de antelación y llevar el equipamiento adecuado.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+        </section>
+    </main>
 
   <footer class="pie">
     <div class="contenedor estructura-pie">
