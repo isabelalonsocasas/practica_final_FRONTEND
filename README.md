@@ -1,4 +1,4 @@
-# 🎾 Arena Padel Club — Frontend
+# Arena Padel Club — Frontend
 
 Proyecto frontend para la plataforma web de **Arena Padel Club**, un club de pádel ubicado en Madrid. La aplicación permite a los usuarios consultar las instalaciones, registrarse, iniciar sesión y gestionar sus reservas de pistas. Los administradores disponen de un panel de control completo para gestionar pistas, usuarios y reservas.
 
@@ -71,7 +71,7 @@ Página de inicio pública. Contiene las siguientes secciones:
 - **Cabecera** (`<header class="cabecera">`): logo, navegación principal con anclas internas y botones de registro/login.
 - **Sección de entrada** (`#inicio`): título principal, descripción y llamada a la acción hacia el registro.
 - **Blog** (`#blog`): cuadrícula de 6 artículos con imagen y texto sobre contenidos del club (técnica, nutrición, equipamiento, etc.).
-- **Instalaciones** (`#instalaciones`): imagen + lista de las instalaciones disponibles (10 pistas de pádel, 4 de tenis, gimnasio, piscina, spa, etc.).
+- **Instalaciones** (`#instalaciones`): imagen + lista de las instalaciones disponibles (10 pistas de pádel, 4 de tenis, gimnasio, etc.).
 - **Reservas / Disponibilidad** (`#reservas`, `#disponibilidad`): sección de llamada a la acción con dos botones de navegación.
 - **Footer** (`#contacto`): información del club, contacto y derechos.
 
@@ -168,7 +168,7 @@ Existe una única hoja de estilos compartida por todas las páginas del proyecto
 - El proyecto representa el **prototipo frontend** de una plataforma de reservas, por lo que los formularios y acciones de los botones son simulados mediante navegación entre páginas estáticas.
 - Las imágenes del club (logo, instalaciones, blog) se encuentran en la carpeta `/img`.
 - La navegación entre roles se simula a través de diferentes versiones de las mismas páginas (p. ej. `pista_detalle.html` vs `pista_detalle_admin.html`).
+- Remarcar se han duplicado tantas páginas ya que no se tenia implementado JavaScript y por tanto toda la lógica de cambios de secciones, no podia visualizarse sin tener la misma pestaña duplicada, esto se cambiará una vez se implemente JavaScript. Un ejemplo de esto, es que cuando se logue un usuario, por ejemplo, simplemente cambiará la cabecera del index. 
 
 ---
 
-*Proyecto desarrollado como práctica final de Frontend — © 2026 Arena Padel Club*
