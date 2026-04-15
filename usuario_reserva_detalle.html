@@ -77,19 +77,25 @@
                         <p id="reserva-id">15</p>
                     </div>
 
-                    <div class="fila-dato">
+                    <div class="grupo-formulario fila-dato">
                         <label>Pista</label>
-                        <p id="reserva-pista">"La Playa"</p>
+                        <input type="text" value="La Playa">
+                        <button class="btn btn-claro btn-pequeno">Modificar</button>
                     </div>
 
-                    <div class="fila-dato">
+                    <div class="grupo-formulario fila-dato">
                         <label>Fecha</label>
-                        <p id="reserva-fecha">18/05/2026</p>
+                        <input type="date" value="2026-05-18">
+                        <button class="btn btn-claro btn-pequeno">Modificar</button>
                     </div>
 
-                    <div class="fila-dato">
+                    <div class="grupo-formulario fila-dato">
                         <label>Hora</label>
-                        <p id="reserva-hora">20:00 - 21:30</p>
+                        <div style="display:flex; gap:0.5rem;">
+                            <input type="time" value="20:00">
+                            <input type="time" value="21:30">
+                        </div>
+                        <button class="btn btn-claro btn-pequeno">Modificar</button>
                     </div>
 
                     <div class="fila-dato">
@@ -107,7 +113,6 @@
                         </p>
                         
                         <div class="formulario-login">
-                            <a href="#" class="btn btn-relleno boton-formulario text-center">Modificar reserva</a>
                             <a href="#" class="btn btn-claro boton-formulario text-center">Cancelar reserva</a>
                         </div>
                     </div>
