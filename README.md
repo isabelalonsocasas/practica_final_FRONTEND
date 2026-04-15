@@ -4,7 +4,7 @@ Proyecto frontend para la plataforma web de **Arena Padel Club**, un club de pá
 
 ---
 
-## 🗂️ Estructura del proyecto
+## Estructura del proyecto
 
 El proyecto está construido únicamente con **HTML5 y CSS3** (sin frameworks de JavaScript), y se organiza en tres grandes bloques de páginas según el rol del usuario:
 
@@ -44,7 +44,7 @@ practica_final_FRONTEND/
 
 ---
 
-## 👥 Roles y flujos de navegación
+## Roles y flujos de navegación
 
 ### Visitante (no autenticado)
 - Accede a la landing page (`index.html`) con información del club, blog y secciones de instalaciones.
@@ -63,7 +63,7 @@ practica_final_FRONTEND/
 
 ---
 
-## 📄 Descripción de las páginas principales
+## Descripción de las páginas principales
 
 ### `index.html` — Landing page
 Página de inicio pública. Contiene las siguientes secciones:
@@ -94,7 +94,7 @@ Siguen el mismo patrón que `admin_pistas.html`: banner + barra de acciones + li
 
 ---
 
-## 🎨 Estilos CSS (`styles.css`)
+## Estilos CSS (`styles.css`)
 
 Existe una única hoja de estilos compartida por todas las páginas del proyecto. Las clases más representativas son:
 
@@ -155,7 +155,7 @@ Existe una única hoja de estilos compartida por todas las páginas del proyecto
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - **HTML5** — estructura semántica con `<header>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<nav>`.
 - **CSS3** — estilos propios sin librerías externas; uso de Flexbox para layouts, variables de clase para componentes reutilizables.
@@ -163,7 +163,7 @@ Existe una única hoja de estilos compartida por todas las páginas del proyecto
 
 ---
 
-## 📌 Notas
+## Notas
 
 - El proyecto representa el **prototipo frontend** de una plataforma de reservas, por lo que los formularios y acciones de los botones son simulados mediante navegación entre páginas estáticas.
 - Las imágenes del club (logo, instalaciones, blog) se encuentran en la carpeta `/img`.
