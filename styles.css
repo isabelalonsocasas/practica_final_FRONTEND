@@ -97,11 +97,6 @@ a {
   min-height: 120px;
 }
 
-/* Excepción para que el input del 'ojito' de la contraseña no se rompa */
-.password-container input {
-  min-height: auto;
-}
-
 /* TIPOGRAFÍA */
 h1, h2, h3{
   font-family: Georgia;
@@ -569,11 +564,6 @@ p {
     padding: 1.1rem 0.85rem;
   }
 
-  .acciones-superiores-reserva,
-  .acciones-superiores-reserva .btn {
-    width: 100%;
-  }
-
   .seccion-usuario-reserva-nueva {
     padding: 4rem 0;
   }
@@ -584,15 +574,6 @@ p {
 
   .rejilla-horarios-formulario {
     grid-template-columns: 1fr;
-  }
-
-  .acciones-secundarias-formulario {
-    justify-content: center;
-  }
-
-  .acciones-secundarias-formulario .btn {
-    width: 100%;
-    text-align: center;
   }
 }
 
@@ -622,10 +603,6 @@ p {
   .login-texto {
     max-width: 100%;
     text-align: center;
-  }
-
-  .estructura-blog {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .estructura-pie {
