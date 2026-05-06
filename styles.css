@@ -103,7 +103,7 @@ a {
 }
 
 /* TIPOGRAFÍA */
-h1, h2, h3, h4 {
+h1, h2, h3{
   font-family: Georgia;
   font-weight: 500;
 }
@@ -286,11 +286,6 @@ p {
   max-width: 760px; /* Para que no se alargue el texto */
 }
 
-.cabecera-listado {
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
 /* BLOG */
 .seccion-blog {
   padding-bottom: 5rem;
@@ -397,11 +392,6 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-}
-
-.pie h4 {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
 }
 
 
