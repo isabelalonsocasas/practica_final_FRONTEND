@@ -377,11 +377,6 @@ p {
 }
 
 /* ADMIN GESTIONES */
-/* Línea entre filas */
-.fila-dato + .fila-dato {
-  border-bottom: 1px solid var(--color_separacion);
-  padding-bottom: 10px;
-}
 
 /* Separación debajo de la cabecera */
 .cabecera-listado {
@@ -499,10 +494,13 @@ p {
 
 /* Datos de usuario */
 .fila-dato {
+  border-bottom: 1px solid var(--color_separacion);
+  padding: 0.9rem 0;
   display: grid;
-  grid-template-columns: 180px 1fr auto;
+  grid-template-columns: 1.1fr 1fr 0.5fr;
   align-items: center;
   gap: 1rem;
+  justify-items: start;
 }
 
 .fila-dato label {
